@@ -20,6 +20,9 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  username: test
+  password: test
+  host: localhost
 
 development:
   <<: *default
@@ -81,5 +84,5 @@ test:
 production:
   <<: *default
   database: enju_heroku_production
-  username: enju_heroku
-  password: <%= ENV['ENJU_HEROKU_DATABASE_PASSWORD'] %>
+  #username: enju_heroku
+  #password: <%= ENV['ENJU_HEROKU_DATABASE_PASSWORD'] %>

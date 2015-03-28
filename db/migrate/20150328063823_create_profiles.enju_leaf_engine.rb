@@ -1,0 +1,21 @@
+# This migration comes from enju_leaf_engine (originally 20140122054321)
+class CreateProfiles < ActiveRecord::Migration
+  def change
+    create_table :profiles do |t|
+      t.integer :user_id
+      t.integer :user_group_id
+      t.integer :library_id
+      t.string :locale
+      t.string :user_number
+      t.text :full_name
+      t.text :note
+      t.text :keyword_list
+      t.integer :required_role_id
+
+      t.timestamps
+    end
+
+    add_index :profiles, :user_id
+    add_index :profiles, :user_number, :unique => true
+  end
+end

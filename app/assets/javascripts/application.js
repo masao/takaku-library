@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require enju_leaf
+//= require enju_event/application
+
 //= require_tree .

@@ -1,0 +1,16 @@
+# This migration comes from enju_circulation_engine (originally 20081220023628)
+class CreateUserReserveStats < ActiveRecord::Migration
+  def self.up
+    create_table :user_reserve_stats do |t|
+      t.datetime :start_date
+      t.datetime :end_date
+      t.text :note
+
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :user_reserve_stats
+  end
+end
