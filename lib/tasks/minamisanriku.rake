@@ -1,6 +1,3 @@
-class Heroku::Client::Rendezvous
-end
-
 namespace :minamisanriku do
   namespace :export do
     desc 'Export checkouts'
