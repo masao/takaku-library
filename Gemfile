@@ -52,6 +52,8 @@ gem 'enju_flower', '~> 0.1.0.pre21'
 gem 'enju_ndl', '~> 0.1.0.pre35'
 gem 'enju_circulation', '~> 0.1.0.pre42'
 gem 'enju_subject', '~> 0.1.0.pre29'
+gem 'enju_loc'
+gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
 gem 'exception_notification', '~> 4.0'
 gem 'exception_notification-rake'
