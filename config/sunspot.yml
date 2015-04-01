@@ -1,6 +1,6 @@
 production:
   solr:
-    hostname: 52.4.57.115
+    hostname: 52.4.94.221
     port: 8080
     log_level: WARNING
     path: /solr/collection1
