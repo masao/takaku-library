@@ -63,3 +63,6 @@ gem 'sunspot_solr', '~> 2.1.1'
 gem 'progress_bar'
 gem 'non-stupid-digest-assets'
 gem 'dotenv-rails'
+
+gem 'newrelic_rpm'
+

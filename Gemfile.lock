@@ -43,20 +43,19 @@ GEM
     attribute_normalizer (1.2.0)
     awesome_nested_set (3.0.2)
       activerecord (>= 4.0.0, < 5)
-    aws-sdk (2.0.33)
-      aws-sdk-resources (= 2.0.33)
-    aws-sdk-core (2.0.33)
+    aws-sdk (2.0.34)
+      aws-sdk-resources (= 2.0.34)
+    aws-sdk-core (2.0.34)
       builder (~> 3.0)
       jmespath (~> 1.0)
       multi_json (~> 1.0)
-      multi_xml (~> 0.5)
-    aws-sdk-resources (2.0.33)
-      aws-sdk-core (= 2.0.33)
+    aws-sdk-resources (2.0.34)
+      aws-sdk-core (= 2.0.34)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (4.0.4)
+    byebug (4.0.5)
       columnize (= 0.9.0)
     cancancan (1.10.1)
     chronic (0.10.2)
@@ -83,9 +82,9 @@ GEM
       warden (~> 1.2.3)
     devise-encryptable (0.2.0)
       devise (>= 2.1.0)
-    dotenv (2.0.0)
-    dotenv-rails (2.0.0)
-      dotenv (= 2.0.0)
+    dotenv (2.0.1)
+    dotenv-rails (2.0.1)
+      dotenv (= 2.0.1)
     dynamic_form (1.1.4)
     enju_biblio (0.1.0.pre65)
       aws-sdk
@@ -218,9 +217,9 @@ GEM
       actionpack (>= 3.0)
     mono_logger (1.1.0)
     multi_json (1.11.0)
-    multi_xml (0.5.5)
     multipart-post (2.0.0)
     nested_form (0.3.2)
+    newrelic_rpm (3.11.1.284)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     non-stupid-digest-assets (1.0.4)
@@ -410,6 +409,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   memcachier
+  newrelic_rpm
   non-stupid-digest-assets
   pg
   progress_bar
