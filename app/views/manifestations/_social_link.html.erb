@@ -2,10 +2,16 @@
 <p>外部のサービスへ</p>
 <ul>
 <% ncid = identifier_contents(:ncid) %>
+<% isbn = identifier_contents(:isbn) %>
 <% if ncid.present? %>
-<li><a href="http://ci.nii.ac.jp/ncid/<%= ncid.first %>">CiNii Books</a></li>
-<% elsif identifier_contents(:isbn).present? %>
-<li><a href="http://ci.nii.ac.jp/books/openurl/query?isbn=<%= identifier_contents(:isbn).first %>">CiNii Books</a></li>
+<li><a href="http://ci.nii.ac.jp/ncid/<%=h ncid.first %>">CiNii Books</a></li>
+<% elsif isbn.present? %>
+<li><a href="http://ci.nii.ac.jp/books/openurl/query?isbn=<%=h isbn.first %>">CiNii Books</a></li>
+<% end %>
+<% if isbn.present? %>
+<li><a href="http://api.calil.jp/openurl?rft.isbn=<%=h isbn.first %>">カーリル</a></li>
+<% else %>
+<li><a href="http://api.calil.jp/openurl?rft.title=<%=h title %>">カーリル</a></li>
 <% end %>
 </ul>
 </div>
