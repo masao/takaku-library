@@ -1,8 +1,8 @@
 <div id="social-bookmark">
 <p>外部のサービスへ</p>
 <ul>
-<% ncid = identifier_contents(:ncid) %>
-<% isbn = identifier_contents(:isbn) %>
+<% ncid = manifestation.identifier_contents(:ncid) %>
+<% isbn = manifestation.identifier_contents(:isbn) %>
 <% if ncid.present? %>
 <li><a href="http://ci.nii.ac.jp/ncid/<%=h ncid.first %>">CiNii Books</a></li>
 <% elsif isbn.present? %>
