@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, path: 'accounts'
-  match "/accounts", to: redirect("/")
+  match "/accounts", to: redirect("/"), via: :all
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
