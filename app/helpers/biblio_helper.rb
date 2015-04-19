@@ -1,5 +1,4 @@
-module EnjuBiblio
-  module BiblioHelper
+module ApplicationHelper
     def form_icon(carrier_type)
       case carrier_type.name
       when 'volume'
@@ -18,5 +17,4 @@ module EnjuBiblio
     rescue NoMethodError
       image_tag('icons/help.png', size: '16x16', alt: t('page.unknown'))
     end
-  end
 end
