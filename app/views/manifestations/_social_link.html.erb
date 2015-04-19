@@ -11,7 +11,7 @@
 <% if isbn.present? %>
 <li><a href="http://api.calil.jp/openurl?rft.isbn=<%=h isbn.first %>">カーリル</a></li>
 <% else %>
-<li><a href="http://api.calil.jp/openurl?rft.title=<%=h title %>">カーリル</a></li>
+<li><a href="http://api.calil.jp/openurl?rft.title=<%=h manifestation.original_title %>">カーリル</a></li>
 <% end %>
 </ul>
 </div>
