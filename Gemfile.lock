@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/next-l/enju_ndl.git
-  revision: 3f9ff25e5c2c3f81ef6382bc793cca88fdab2734
+  revision: 7b1388e86e76ca31a0990f49376d079e183b997a
   branch: 1.1
   specs:
     enju_ndl (0.1.0.pre35)
@@ -323,8 +323,7 @@ GEM
     ri_cal (0.8.8)
     rsolr (1.0.12)
       builder (>= 2.1.2)
-    rufus-scheduler (3.0.9)
-      tzinfo
+    rufus-scheduler (3.1.1)
     sass (3.4.13)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
