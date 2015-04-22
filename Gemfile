@@ -52,7 +52,7 @@ gem 'enju_flower', '~> 0.1.0.pre21'
 gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
 gem 'enju_circulation', '~> 0.1.0.pre42'
 gem 'enju_subject', '~> 0.1.0.pre29'
-gem 'enju_loc'
+gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
 #gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
 gem 'exception_notification', '~> 4.0'

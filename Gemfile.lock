@@ -1,4 +1,13 @@
 GIT
+  remote: git://github.com/next-l/enju_loc.git
+  revision: 52be5013e4431526833dcd55d844ec77540b1936
+  branch: 1.1
+  specs:
+    enju_loc (0.1.0.pre4)
+      faraday
+      nokogiri (~> 1.6.6)
+
+GIT
   remote: git://github.com/next-l/enju_ndl.git
   revision: 7b1388e86e76ca31a0990f49376d079e183b997a
   branch: 1.1
@@ -153,9 +162,6 @@ GEM
       sunspot_rails (~> 2.1)
     enju_library (0.1.0.pre40)
       geocoder
-    enju_loc (0.1.0.pre4)
-      faraday
-      nokogiri (~> 1.6.6)
     enju_manifestation_viewer (0.1.0.pre17)
       enju_biblio (~> 0.1.0.pre64)
     enju_message (0.1.14.pre22)
@@ -401,7 +407,7 @@ DEPENDENCIES
   enju_circulation (~> 0.1.0.pre42)
   enju_flower (~> 0.1.0.pre21)
   enju_leaf (~> 1.1.0.rc17)
-  enju_loc
+  enju_loc!
   enju_ndl!
   enju_subject (~> 0.1.0.pre29)
   exception_notification (~> 4.0)
