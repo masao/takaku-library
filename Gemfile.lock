@@ -1,4 +1,75 @@
 GIT
+  remote: git://github.com/next-l/enju_biblio.git
+  revision: 7ff3adcb8545e51f2d6cef79dd26c58aa9db70f8
+  branch: 1.1
+  specs:
+    enju_biblio (0.1.0.pre66)
+      aws-sdk
+      dynamic_form
+      faraday
+      jc-validates_timeliness
+      library_stdnums
+      lisbn
+      marc
+      paper_trail (~> 3.0)
+      paperclip
+      paperclip-meta
+      resque_mailer
+      simple_form
+      statesman
+
+GIT
+  remote: git://github.com/next-l/enju_circulation.git
+  revision: 528200b594c5cc0d8d708190956aadac55a7b7b8
+  branch: 1.1
+  specs:
+    enju_circulation (0.1.0.pre43)
+      enju_biblio (~> 0.1.0.pre65)
+      enju_event (~> 0.1.17.pre24)
+      enju_library (~> 0.1.0.pre40)
+      enju_message (~> 0.1.14.pre22)
+
+GIT
+  remote: git://github.com/next-l/enju_flower.git
+  revision: 264a5904aa1a37dcd4b278128a3be8fe5c8804d1
+  branch: 1.1
+  specs:
+    enju_flower (0.1.0.pre21)
+
+GIT
+  remote: git://github.com/next-l/enju_leaf.git
+  revision: 611cafa5287830a4ee96ab0396abc46dd2c8ca82
+  branch: 1.1
+  specs:
+    enju_leaf (1.1.0.rc18)
+      acts_as_list (~> 0.6)
+      addressable
+      attribute_normalizer (~> 1.2)
+      cancancan (~> 1.10)
+      dalli
+      devise (~> 3.4)
+      devise-encryptable
+      enju_biblio (~> 0.1.0.pre65)
+      enju_library (~> 0.1.0.pre40)
+      enju_manifestation_viewer (~> 0.1.0.pre17)
+      friendly_id (>= 4.0)
+      jquery-ui-rails (~> 4.2.1)
+      kaminari (~> 0.16.3)
+      mobylette (~> 3.5)
+      nested_form
+      paperclip (~> 4.2)
+      rails (>= 3.2.21, < 5.0)
+      rails_autolink
+      redcarpet
+      redis-rails
+      resque
+      resque-scheduler (~> 4.0)
+      settingslogic
+      sitemap_generator
+      statesman
+      sunspot_rails (~> 2.2)
+
+GIT
   remote: git://github.com/next-l/enju_loc.git
   revision: 52be5013e4431526833dcd55d844ec77540b1936
   branch: 1.1
@@ -17,6 +88,14 @@ GIT
       library_stdnums
       lisbn
       nokogiri (~> 1.6.6)
+
+GIT
+  remote: git://github.com/next-l/enju_subject.git
+  revision: 1ab464016daa08379548febabf44367f7bccfa95
+  branch: 1.1
+  specs:
+    enju_subject (0.1.0.pre29)
+      dynamic_form
 
 GEM
   remote: https://rubygems.org/
@@ -106,25 +185,6 @@ GEM
     dotenv-rails (2.0.1)
       dotenv (= 2.0.1)
     dynamic_form (1.1.4)
-    enju_biblio (0.1.0.pre65)
-      aws-sdk
-      dynamic_form
-      faraday
-      jc-validates_timeliness
-      library_stdnums
-      lisbn
-      marc
-      paper_trail (~> 3.0)
-      paperclip
-      paperclip-meta
-      resque_mailer
-      simple_form
-      statesman
-    enju_circulation (0.1.0.pre43)
-      enju_biblio (~> 0.1.0.pre65)
-      enju_event (~> 0.1.17.pre24)
-      enju_library (~> 0.1.0.pre40)
-      enju_message (~> 0.1.14.pre22)
     enju_event (0.1.17.pre24)
       enju_message (~> 0.1.14.pre22)
       paperclip
@@ -132,34 +192,6 @@ GEM
       ri_cal
       simple_form
       statesman
-    enju_flower (0.1.0.pre21)
-    enju_leaf (1.1.0.rc17)
-      acts_as_list (~> 0.6)
-      addressable
-      attribute_normalizer (~> 1.2)
-      cancancan (~> 1.10)
-      dalli
-      devise (~> 3.4)
-      devise-encryptable
-      enju_biblio (~> 0.1.0.pre64)
-      enju_library (~> 0.1.0.pre40)
-      enju_manifestation_viewer (~> 0.1.0.pre17)
-      friendly_id (>= 4.0)
-      jquery-ui-rails (~> 4.2.1)
-      kaminari (~> 0.16.3)
-      mobylette (~> 3.5)
-      nested_form
-      paperclip (~> 4.2)
-      rails (>= 3.2.21, < 5.0)
-      rails_autolink
-      redcarpet
-      redis-rails
-      resque
-      resque-scheduler (~> 4.0)
-      settingslogic
-      sitemap_generator
-      statesman
-      sunspot_rails (~> 2.1)
     enju_library (0.1.0.pre40)
       geocoder
     enju_manifestation_viewer (0.1.0.pre17)
@@ -170,8 +202,6 @@ GEM
       resque_mailer
       simple_form
       statesman
-    enju_subject (0.1.0.pre29)
-      dynamic_form
     erubis (2.7.0)
     exception_notification (4.0.1)
       actionmailer (>= 3.0.4)
@@ -404,12 +434,13 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   dotenv-rails
-  enju_circulation (~> 0.1.0.pre42)
-  enju_flower (~> 0.1.0.pre21)
-  enju_leaf (~> 1.1.0.rc17)
+  enju_biblio!
+  enju_circulation!
+  enju_flower!
+  enju_leaf!
   enju_loc!
   enju_ndl!
-  enju_subject (~> 0.1.0.pre29)
+  enju_subject!
   exception_notification (~> 4.0)
   exception_notification-rake
   foreman

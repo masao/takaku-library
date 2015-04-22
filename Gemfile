@@ -47,11 +47,12 @@ group :development, :test do
 end
 
 
-gem 'enju_leaf', '~> 1.1.0.rc17'
-gem 'enju_flower', '~> 0.1.0.pre21'
+gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.1"
+gem "enju_biblio", github: "next-l/enju_biblio", branch: "1.1"
+gem 'enju_flower', github: "next-l/enju_flower", branch: "1.1"
 gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
-gem 'enju_circulation', '~> 0.1.0.pre42'
-gem 'enju_subject', '~> 0.1.0.pre29'
+gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
+gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
 gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
 #gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
