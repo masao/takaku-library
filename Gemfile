@@ -54,6 +54,7 @@ gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
 gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
 gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
 gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
+gem 'enju_library', github: "next-l/enju_library", branch: "1.1"
 #gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
 gem 'exception_notification', '~> 4.0'

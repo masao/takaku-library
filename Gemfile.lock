@@ -70,6 +70,14 @@ GIT
       sunspot_rails (~> 2.2)
 
 GIT
+  remote: git://github.com/next-l/enju_library.git
+  revision: 4adbe7efc7331a61275fb48b86ecebe981a0fd92
+  branch: 1.1
+  specs:
+    enju_library (0.1.0.pre40)
+      geocoder
+
+GIT
   remote: git://github.com/next-l/enju_loc.git
   revision: 52be5013e4431526833dcd55d844ec77540b1936
   branch: 1.1
@@ -192,8 +200,6 @@ GEM
       ri_cal
       simple_form
       statesman
-    enju_library (0.1.0.pre40)
-      geocoder
     enju_manifestation_viewer (0.1.0.pre17)
       enju_biblio (~> 0.1.0.pre64)
     enju_message (0.1.14.pre22)
@@ -438,6 +444,7 @@ DEPENDENCIES
   enju_circulation!
   enju_flower!
   enju_leaf!
+  enju_library!
   enju_loc!
   enju_ndl!
   enju_subject!
