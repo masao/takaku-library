@@ -57,6 +57,7 @@ gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
 gem 'enju_library', github: "next-l/enju_library", branch: "1.1"
 #gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
+gem 'aws-sdk', '< 2.0'
 gem 'exception_notification', '~> 4.0'
 gem 'exception_notification-rake'
 gem 'whenever', require: false
