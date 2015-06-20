@@ -331,7 +331,6 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (10.4.2)
-    rdoc (4.2.0)
     redis (3.2.1)
     redis-actionpack (4.0.0)
       actionpack (~> 4)
@@ -378,9 +377,6 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
     scrub_rb (1.0.1)
-    sdoc (0.4.1)
-      json (~> 1.7, >= 1.7.7)
-      rdoc (~> 4.0)
     simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -466,7 +462,6 @@ DEPENDENCIES
   rails (= 4.2.1)
   rails_12factor
   sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
   spring
   sunspot_solr (~> 2.1.1)
   turbolinks
