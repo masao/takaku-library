@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_biblio.git
-  revision: d19ce498bcc5cd47b48c8a27ab62e499724ad311
+  revision: dbbe16b1d6e6a5287d5c99c39f082de6c5eac354
   branch: 1.1
   specs:
-    enju_biblio (0.1.0.pre66)
+    enju_biblio (0.1.0.pre67)
       aws-sdk
       dynamic_form
       faraday
@@ -27,37 +27,37 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_circulation.git
-  revision: 2498d45646a8b15c9ea25b32d5794200d90ff6f4
+  revision: f38dc4eb1c1ed4a31e718b6040893e65b7346fe7
   branch: 1.1
   specs:
-    enju_circulation (0.1.0.pre45)
+    enju_circulation (0.1.0.pre46)
       enju_biblio (~> 0.1.0.pre66)
-      enju_event (~> 0.1.17.pre25)
+      enju_event (~> 0.1.17.pre26)
       enju_library (~> 0.1.0.pre41)
-      enju_message (~> 0.1.14.pre22)
+      enju_message (~> 0.1.14.pre24)
 
 GIT
   remote: git://github.com/next-l/enju_flower.git
-  revision: 2c7586cd265c5da326795e17407f54e822dae00b
+  revision: 38aeded6c83b2f20362ef228b1d111cf368a9ab3
   branch: 1.1
   specs:
     enju_flower (0.1.0.pre22)
 
 GIT
   remote: git://github.com/next-l/enju_leaf.git
-  revision: 312d91a0ee096c9f0134f0627fb5746ca73c9563
+  revision: 1c5e304fd09c23983caf0aaab5ad310c99464e99
   branch: 1.1
   specs:
-    enju_leaf (1.1.0.rc19)
+    enju_leaf (1.1.0.rc20)
       acts_as_list (~> 0.7)
       addressable
       attribute_normalizer (~> 1.2)
-      cancancan (~> 1.11)
+      cancancan (~> 1.12)
       dalli
-      devise (~> 3.4)
+      devise (~> 3.5)
       devise-encryptable
-      enju_biblio (~> 0.1.0.pre66)
-      enju_library (~> 0.1.0.pre41)
+      enju_biblio (~> 0.1.0.pre67)
+      enju_library (~> 0.1.0.pre42)
       enju_manifestation_viewer (~> 0.1.0.pre18)
       friendly_id (>= 4.0)
       jquery-ui-rails (~> 4.2.1)
@@ -66,7 +66,7 @@ GIT
       mobylette (~> 3.5)
       nested_form
       paperclip (~> 4.2)
-      rails (>= 3.2.21, < 5.0)
+      rails (>= 3.2.22, < 5.0)
       rails_autolink
       redis-rails
       resque
@@ -77,15 +77,15 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_library.git
-  revision: ad0b69293dda533f1c433eef993c9d7e906443db
+  revision: ea547aba74f955ea7bfc19861bb2c74c3c89c83a
   branch: 1.1
   specs:
-    enju_library (0.1.0.pre41)
+    enju_library (0.1.0.pre42)
       geocoder
 
 GIT
   remote: git://github.com/next-l/enju_loc.git
-  revision: fd4dca6a99a251f92107eca743cf660d619e3327
+  revision: 655bf33e102a5233e21227bb241d6288646fb2dd
   branch: 1.1
   specs:
     enju_loc (0.1.0.pre5)
@@ -94,10 +94,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_ndl.git
-  revision: eaf7ed71ea098208471f9dcf8c5efc612296909d
+  revision: 5ee77a153be74597cf5e2c3a68040ff03226a456
   branch: 1.1
   specs:
-    enju_ndl (0.1.0.pre36)
+    enju_ndl (0.1.0.pre37)
       faraday
       library_stdnums
       lisbn
@@ -105,10 +105,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_subject.git
-  revision: 06a65c895c3ffc534e52848a46347152ec0bbfce
+  revision: 8b02ac87d40166bf76a822f5b577df86a37cc1a6
   branch: 1.1
   specs:
-    enju_subject (0.1.0.pre30)
+    enju_subject (0.1.0.pre32)
       dynamic_form
 
 GEM
@@ -167,7 +167,7 @@ GEM
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
-    cancancan (1.11.0)
+    cancancan (1.12.0)
     chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -197,8 +197,8 @@ GEM
       dotenv (= 2.0.2)
       railties (~> 4.0)
     dynamic_form (1.1.4)
-    enju_event (0.1.17.pre25)
-      enju_message (~> 0.1.14.pre22)
+    enju_event (0.1.17.pre26)
+      enju_message (~> 0.1.14.pre24)
       paperclip
       rails_autolink
       ri_cal
@@ -206,7 +206,7 @@ GEM
       statesman
     enju_manifestation_viewer (0.1.0.pre18)
       enju_biblio (~> 0.1.0.pre66)
-    enju_message (0.1.14.pre23)
+    enju_message (0.1.14.pre24)
       awesome_nested_set
       rails_autolink
       resque_mailer
@@ -247,9 +247,9 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.9.3)
-    kramdown (1.7.0)
+    kramdown (1.8.0)
     library_stdnums (1.4.1)
-    lisbn (0.2.1)
+    lisbn (0.2.2)
       nokogiri
       nori (~> 2.0)
     loofah (2.0.2)
@@ -267,10 +267,10 @@ GEM
     mobylette (3.5)
       actionpack (>= 3.0)
     mono_logger (1.1.0)
-    multi_json (1.11.1)
+    multi_json (1.11.2)
     multipart-post (2.0.0)
     nested_form (0.3.2)
-    newrelic_rpm (3.12.0.288)
+    newrelic_rpm (3.12.1.298)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     non-stupid-digest-assets (1.0.4)
@@ -329,7 +329,7 @@ GEM
       activesupport (= 4.2.1)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    raindrops (0.13.0)
+    raindrops (0.14.0)
     rake (10.4.2)
     redis (3.2.1)
     redis-actionpack (4.0.0)
@@ -369,7 +369,7 @@ GEM
     rsolr (1.0.12)
       builder (>= 2.1.2)
     rufus-scheduler (3.1.3)
-    sass (3.4.14)
+    sass (3.4.15)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
@@ -389,11 +389,11 @@ GEM
     spring (1.3.6)
     sprockets (3.2.0)
       rack (~> 1.0)
-    sprockets-rails (2.3.1)
+    sprockets-rails (2.3.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    statesman (1.3.0)
+    statesman (1.3.1)
     sunspot (2.2.0)
       pr_geohash (~> 1.0)
       rsolr (~> 1.0.7)
