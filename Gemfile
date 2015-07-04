@@ -51,11 +51,11 @@ gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.1"
 gem 'enju_flower', github: "next-l/enju_flower", branch: "1.1"
 gem "enju_biblio", github: "next-l/enju_biblio", branch: "1.1"
 gem "enju_grid", github: "masao/enju_grid", branch: "1.1"
+gem 'enju_manifestation_viewer', github: "next-l/enju_manifestation_viewer", branch: "1.1"
 gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
 gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
 gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
 gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
-gem 'enju_library', github: "next-l/enju_library", branch: "1.1"
 #gem 'enju_nii'
 #gem 'charlock_holmes', platforms: :mri
 gem 'aws-sdk', '< 2.0'

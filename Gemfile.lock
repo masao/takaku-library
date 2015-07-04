@@ -27,10 +27,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_circulation.git
-  revision: f38dc4eb1c1ed4a31e718b6040893e65b7346fe7
+  revision: bf81b3737dcc5c02817a1f3c08ed54e561ae6f4d
   branch: 1.1
   specs:
-    enju_circulation (0.1.0.pre46)
+    enju_circulation (0.1.0.pre47)
       enju_biblio (~> 0.1.0.pre66)
       enju_event (~> 0.1.17.pre26)
       enju_library (~> 0.1.0.pre41)
@@ -76,14 +76,6 @@ GIT
       sunspot_rails (~> 2.2)
 
 GIT
-  remote: git://github.com/next-l/enju_library.git
-  revision: ea547aba74f955ea7bfc19861bb2c74c3c89c83a
-  branch: 1.1
-  specs:
-    enju_library (0.1.0.pre42)
-      geocoder
-
-GIT
   remote: git://github.com/next-l/enju_loc.git
   revision: 655bf33e102a5233e21227bb241d6288646fb2dd
   branch: 1.1
@@ -91,6 +83,14 @@ GIT
     enju_loc (0.1.0.pre5)
       faraday
       nokogiri (~> 1.6.6)
+
+GIT
+  remote: git://github.com/next-l/enju_manifestation_viewer.git
+  revision: 795065ccdbcb233b6beb7cb36e382e4d8d142c83
+  branch: 1.1
+  specs:
+    enju_manifestation_viewer (0.1.0.pre18)
+      enju_biblio (~> 0.1.0.pre66)
 
 GIT
   remote: git://github.com/next-l/enju_ndl.git
@@ -204,8 +204,8 @@ GEM
       ri_cal
       simple_form
       statesman
-    enju_manifestation_viewer (0.1.0.pre18)
-      enju_biblio (~> 0.1.0.pre66)
+    enju_library (0.1.0.pre42)
+      geocoder
     enju_message (0.1.14.pre24)
       awesome_nested_set
       rails_autolink
@@ -445,8 +445,8 @@ DEPENDENCIES
   enju_flower!
   enju_grid!
   enju_leaf!
-  enju_library!
   enju_loc!
+  enju_manifestation_viewer!
   enju_ndl!
   enju_subject!
   exception_notification (~> 4.0)
