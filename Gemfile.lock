@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/masao/enju_grid.git
-  revision: 4023d169cc245b76a020a9fa2fac0007a74c6085
+  revision: 9d52288d716d4d4bc97191007f18b1be52a13f48
   branch: 1.1
   specs:
     enju_grid (0.0.1)
@@ -231,7 +231,7 @@ GEM
       activesupport (>= 4.1.0)
     highline (1.6.21)
     i18n (0.7.0)
-    jbuilder (2.3.0)
+    jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jc-validates_timeliness (3.1.1)
