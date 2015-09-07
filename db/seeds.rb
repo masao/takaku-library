@@ -35,7 +35,7 @@ end
 system_user = User.new
 system_user.username = 'system'
 system_user.password = SecureRandom.urlsafe_base64(32)
-system_user.email = system_user.email_confirmation = 'root@library.example.jp'
+#system_user.email = system_user.email_confirmation = 'root@library.example.jp'
 system_user.role = Role.where(name: 'Administrator').first
 system_user.save!
 system_profile = new_profile
@@ -46,10 +46,10 @@ system_profile.index
 user = User.new
 user.username = username
 user.email = email
-user.email_confirmation = email
+#user.email_confirmation = email
 user.password = password
 user.password_confirmation = password
-user.operator = user
+#user.operator = user
 #user.confirm!
 user.role = Role.where(name: 'Administrator').first
 user.save!
