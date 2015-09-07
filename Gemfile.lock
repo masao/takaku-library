@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/masao/enju_grid.git
-  revision: 9d52288d716d4d4bc97191007f18b1be52a13f48
+  revision: b56316ecf44f1cfc4d2b3aa7f17de0cebdc5fbfe
   branch: 1.1
   specs:
     enju_grid (0.0.1)
