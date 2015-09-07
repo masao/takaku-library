@@ -7,10 +7,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_biblio.git
-  revision: dbbe16b1d6e6a5287d5c99c39f082de6c5eac354
+  revision: 2764d0b6a13c5e1b45970fc843abb880b8e87af0
   branch: 1.1
   specs:
-    enju_biblio (0.1.0.pre67)
+    enju_biblio (0.1.0.pre69)
       aws-sdk
       dynamic_form
       faraday
@@ -18,7 +18,7 @@ GIT
       library_stdnums
       lisbn
       marc
-      paper_trail (~> 3.0)
+      paper_trail (~> 4.0)
       paperclip
       paperclip-meta
       resque_mailer
@@ -27,28 +27,26 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_circulation.git
-  revision: bf81b3737dcc5c02817a1f3c08ed54e561ae6f4d
+  revision: d5cb9aae67c487ece456b42b8c4dc87e52aff459
   branch: 1.1
   specs:
-    enju_circulation (0.1.0.pre47)
-      enju_biblio (~> 0.1.0.pre66)
+    enju_circulation (0.1.0.pre48)
       enju_event (~> 0.1.17.pre26)
-      enju_library (~> 0.1.0.pre41)
-      enju_message (~> 0.1.14.pre24)
+      enju_leaf (~> 1.1.0.rc20)
 
 GIT
   remote: git://github.com/next-l/enju_flower.git
-  revision: 38aeded6c83b2f20362ef228b1d111cf368a9ab3
+  revision: 99779afbc6a87a213e052b76c870bd1ad4a4d934
   branch: 1.1
   specs:
-    enju_flower (0.1.0.pre22)
+    enju_flower (0.1.0.pre23)
 
 GIT
   remote: git://github.com/next-l/enju_leaf.git
-  revision: 1c5e304fd09c23983caf0aaab5ad310c99464e99
+  revision: 760a6ce1f55a4e9a9e5ae796a56fd7afbe924740
   branch: 1.1
   specs:
-    enju_leaf (1.1.0.rc20)
+    enju_leaf (1.1.0.rc21)
       acts_as_list (~> 0.7)
       addressable
       attribute_normalizer (~> 1.2)
@@ -56,8 +54,8 @@ GIT
       dalli
       devise (~> 3.5)
       devise-encryptable
-      enju_biblio (~> 0.1.0.pre67)
-      enju_library (~> 0.1.0.pre42)
+      enju_biblio (~> 0.1.0.pre68)
+      enju_library (~> 0.1.0.pre43)
       enju_manifestation_viewer (~> 0.1.0.pre18)
       friendly_id (>= 4.0)
       jquery-ui-rails (~> 4.2.1)
@@ -71,13 +69,13 @@ GIT
       redis-rails
       resque
       resque-scheduler (~> 4.0)
-      sitemap_generator
+      sitemap_generator (~> 5.1)
       statesman
       sunspot_rails (~> 2.2)
 
 GIT
   remote: git://github.com/next-l/enju_loc.git
-  revision: 655bf33e102a5233e21227bb241d6288646fb2dd
+  revision: 34d20fb680852cde83aeffceb8702c0679b014c2
   branch: 1.1
   specs:
     enju_loc (0.1.0.pre5)
@@ -86,15 +84,15 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_manifestation_viewer.git
-  revision: 795065ccdbcb233b6beb7cb36e382e4d8d142c83
+  revision: 3ca2bf8691be300a2235bcd4ae135a8f883518a2
   branch: 1.1
   specs:
-    enju_manifestation_viewer (0.1.0.pre18)
-      enju_biblio (~> 0.1.0.pre66)
+    enju_manifestation_viewer (0.1.0.pre19)
+      enju_biblio (~> 0.1.0.pre68)
 
 GIT
   remote: git://github.com/next-l/enju_ndl.git
-  revision: 5ee77a153be74597cf5e2c3a68040ff03226a456
+  revision: 26bfff67edddcff0706378c702863c82a7fd3f34
   branch: 1.1
   specs:
     enju_ndl (0.1.0.pre37)
@@ -105,10 +103,10 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_subject.git
-  revision: 8b02ac87d40166bf76a822f5b577df86a37cc1a6
+  revision: 34bc87d17bc93e25fd6b9666efbfa9da39f8fc82
   branch: 1.1
   specs:
-    enju_subject (0.1.0.pre32)
+    enju_subject (0.1.0.pre33)
       dynamic_form
 
 GEM
@@ -152,21 +150,20 @@ GEM
     acts_as_list (0.7.2)
       activerecord (>= 3.0)
     addressable (2.3.8)
-    arel (6.0.0)
+    arel (6.0.3)
     attribute_normalizer (1.2.0)
     awesome_nested_set (3.0.2)
       activerecord (>= 4.0.0, < 5)
-    aws-sdk (1.64.0)
-      aws-sdk-v1 (= 1.64.0)
-    aws-sdk-v1 (1.64.0)
+    aws-sdk (1.66.0)
+      aws-sdk-v1 (= 1.66.0)
+    aws-sdk-v1 (1.66.0)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
+    byebug (6.0.2)
     cancancan (1.12.0)
     chronic (0.10.2)
     climate_control (0.0.3)
@@ -180,10 +177,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
-    columnize (0.9.0)
     dalli (2.7.4)
     debug_inspector (0.0.2)
-    devise (3.5.1)
+    devise (3.5.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -204,9 +200,9 @@ GEM
       ri_cal
       simple_form
       statesman
-    enju_library (0.1.0.pre42)
+    enju_library (0.1.0.pre43)
       geocoder
-    enju_message (0.1.14.pre24)
+    enju_message (0.1.14.pre25)
       awesome_nested_set
       rails_autolink
       resque_mailer
@@ -219,7 +215,7 @@ GEM
     exception_notification-rake (0.2.1)
       exception_notification (~> 4.1.0)
       rake (>= 0.9.0)
-    execjs (2.5.2)
+    execjs (2.6.0)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     foreman (0.78.0)
@@ -227,7 +223,7 @@ GEM
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     geocoder (1.2.9)
-    globalid (0.3.5)
+    globalid (0.3.6)
       activesupport (>= 4.1.0)
     highline (1.6.21)
     i18n (0.7.0)
@@ -236,7 +232,7 @@ GEM
       multi_json (~> 1.2)
     jc-validates_timeliness (3.1.1)
       timeliness (~> 0.3.7)
-    jquery-rails (4.0.4)
+    jquery-rails (4.0.5)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
@@ -246,13 +242,13 @@ GEM
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    kgio (2.9.3)
+    kgio (2.10.0)
     kramdown (1.8.0)
     library_stdnums (1.4.1)
     lisbn (0.2.2)
       nokogiri
       nori (~> 2.0)
-    loofah (2.0.2)
+    loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -263,23 +259,24 @@ GEM
     mime-types (2.6.1)
     mimemagic (0.3.0)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     mobylette (3.5)
       actionpack (>= 3.0)
     mono_logger (1.1.0)
     multi_json (1.11.2)
     multipart-post (2.0.0)
     nested_form (0.3.2)
-    newrelic_rpm (3.12.1.298)
+    newrelic_rpm (3.13.0.299)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    non-stupid-digest-assets (1.0.4)
+    non-stupid-digest-assets (1.0.5)
     nori (2.6.0)
     options (2.3.2)
     orm_adapter (0.5.0)
-    paper_trail (3.0.8)
-      activerecord (>= 3.0, < 5.0)
-      activesupport (>= 3.0, < 5.0)
+    paper_trail (4.0.0)
+      activerecord (>= 3.0, < 6.0)
+      activesupport (>= 3.0, < 6.0)
+      request_store (~> 1.1)
     paperclip (4.3.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -288,7 +285,7 @@ GEM
       mimemagic (= 0.3.0)
     paperclip-meta (1.2.0)
       paperclip (>= 3.0.2, < 5.0)
-    pg (0.18.2)
+    pg (0.18.3)
     pr_geohash (1.0.0)
     progress_bar (1.0.3)
       highline (~> 1.6.1)
@@ -311,7 +308,7 @@ GEM
       sprockets-rails
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.6)
+    rails-dom-testing (1.0.7)
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
@@ -323,20 +320,20 @@ GEM
     rails_autolink (1.1.6)
       rails (> 3.1)
     rails_serve_static_assets (0.0.4)
-    rails_stdout_logging (0.0.3)
+    rails_stdout_logging (0.0.4)
     railties (4.2.1)
       actionpack (= 4.2.1)
       activesupport (= 4.2.1)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    raindrops (0.14.0)
+    raindrops (0.15.0)
     rake (10.4.2)
     redis (3.2.1)
     redis-actionpack (4.0.0)
       actionpack (~> 4)
       redis-rack (~> 1.5.0)
       redis-store (~> 1.1.0)
-    redis-activesupport (4.0.0)
+    redis-activesupport (4.1.1)
       activesupport (~> 4)
       redis-store (~> 1.1.0)
     redis-namespace (1.5.2)
@@ -348,8 +345,9 @@ GEM
       redis-actionpack (~> 4)
       redis-activesupport (~> 4)
       redis-store (~> 1.1.0)
-    redis-store (1.1.5)
+    redis-store (1.1.6)
       redis (>= 2.2)
+    request_store (1.2.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     resque (1.25.2)
@@ -368,26 +366,26 @@ GEM
     ri_cal (0.8.8)
     rsolr (1.0.12)
       builder (>= 2.1.2)
-    rufus-scheduler (3.1.3)
-    sass (3.4.15)
-    sass-rails (5.0.3)
+    rufus-scheduler (3.1.4)
+    sass (3.4.18)
+    sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-      tilt (~> 1.1)
+      tilt (>= 1.1, < 3)
     scrub_rb (1.0.1)
-    simple_form (3.1.0)
+    simple_form (3.1.1)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
-    sitemap_generator (5.0.5)
+    sitemap_generator (5.1.0)
       builder
     spring (1.3.6)
-    sprockets (3.2.0)
+    sprockets (3.3.4)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)
@@ -404,13 +402,13 @@ GEM
     sunspot_solr (2.1.1)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (1.4.1)
+    tilt (2.0.1)
     timeliness (0.3.7)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.7.1)
+    uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
@@ -424,7 +422,7 @@ GEM
       rack (>= 1.0.0)
     warden (1.2.3)
       rack (>= 1.0)
-    web-console (2.1.3)
+    web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
