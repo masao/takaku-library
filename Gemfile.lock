@@ -102,6 +102,15 @@ GIT
       nokogiri (~> 1.6.6)
 
 GIT
+  remote: git://github.com/next-l/enju_nii.git
+  revision: ff350da4b2b3f15dacc4532c1c5e6aaaf831abe1
+  branch: 1.1
+  specs:
+    enju_nii (0.1.0.pre13)
+      enju_biblio (~> 0.1.0.pre68)
+      faraday
+
+GIT
   remote: git://github.com/next-l/enju_subject.git
   revision: 30d8b0f4d10a7aa66644fcd26bf32ebd27c53a1d
   branch: 1.1
@@ -446,6 +455,7 @@ DEPENDENCIES
   enju_loc!
   enju_manifestation_viewer!
   enju_ndl!
+  enju_nii!
   enju_subject!
   exception_notification (~> 4.0)
   exception_notification-rake
