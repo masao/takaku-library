@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_biblio.git
-  revision: bd58902b1ff3226fa7ae53ab8eafae55c0c19eda
+  revision: 4e68790091f25ba4349c0083513f8d4954fc1223
   branch: 1.1
   specs:
     enju_biblio (0.1.0.pre69)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_circulation.git
-  revision: f2990c373f144b2aacfa2f1916a52cfe8d9f3a94
+  revision: 68a51a9a7d47e711a024eedf3eabfdb3c022075e
   branch: 1.1
   specs:
     enju_circulation (0.1.0.pre48)
@@ -36,14 +36,14 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_flower.git
-  revision: d7be6c407dcd6467bba771bddb9075bff51e3b73
+  revision: 050bfa320275b5cdd24f1d45a859b80d10b91ad2
   branch: 1.1
   specs:
     enju_flower (0.1.0.pre23)
 
 GIT
   remote: git://github.com/next-l/enju_leaf.git
-  revision: 3047ed9ae87f90ad6a03859f5d0b9e7e214f9f5f
+  revision: 79cb7c2f36141cb83036719ed43da48cc205a59b
   branch: 1.1
   specs:
     enju_leaf (1.1.0.rc21)
@@ -75,7 +75,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_loc.git
-  revision: 751e7501503e3814b6ccdfca50b70c64e0e385ad
+  revision: 996b200eaf537f62c9086aef05cf75ebd18cb622
   branch: 1.1
   specs:
     enju_loc (0.1.0.pre5)
@@ -84,7 +84,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_manifestation_viewer.git
-  revision: fd9f9a27b0d9988c4128bb9b3221b7cc0ce707cd
+  revision: e76a52cd3231bb0ab045795c261cc3a97e0f08c0
   branch: 1.1
   specs:
     enju_manifestation_viewer (0.1.0.pre19)
@@ -92,7 +92,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_ndl.git
-  revision: 560885834f1efd1103adc9957874ec39657bfc1f
+  revision: cc1c41fcd6ed2f2e1ed45d2ddb0f42f42f4f1418
   branch: 1.1
   specs:
     enju_ndl (0.1.0.pre37)
@@ -103,7 +103,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_subject.git
-  revision: 0870847ce5bba0a99dfdd54b053c17750ce385d6
+  revision: 30d8b0f4d10a7aa66644fcd26bf32ebd27c53a1d
   branch: 1.1
   specs:
     enju_subject (0.1.0.pre33)
@@ -243,7 +243,7 @@ GEM
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
     kgio (2.10.0)
-    kramdown (1.8.0)
+    kramdown (1.9.0)
     library_stdnums (1.4.1)
     lisbn (0.2.2)
       nokogiri
