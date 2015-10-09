@@ -3,10 +3,15 @@
 <ul>
 <% ncid = manifestation.identifier_contents(:ncid) %>
 <% isbn = manifestation.identifier_contents(:isbn) %>
+<% issn = manifestation.identifier_contents(:issn) %>
 <% if ncid.present? %>
 <li><a href="http://ci.nii.ac.jp/ncid/<%=h ncid.first %>">CiNii Books</a></li>
 <% elsif isbn.present? %>
 <li><a href="http://ci.nii.ac.jp/books/openurl/query?isbn=<%=h isbn.first %>">CiNii Books</a></li>
+<% elsif issn.present? %>
+<li><a href="http://ci.nii.ac.jp/books/openurl/query?issn=<%=h issn.first %>">CiNii Books</a></li>
+<% else %>
+<li><a href="http://ci.nii.ac.jp/books/openurl/query?title=<%=h manifestation.original_title %>">CiNii Books</a></li>
 <% end %>
 <% if isbn.present? %>
 <li><a href="http://api.calil.jp/openurl?rft.isbn=<%=h isbn.first %>">カーリル</a></li>
