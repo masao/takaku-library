@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_biblio.git
-  revision: 3220ba592dd7db15d1a67983a1fcef7f33884b5d
+  revision: 820a844f99217f3ebf626a917e2e1d484ff3995c
   branch: 1.1
   specs:
     enju_biblio (0.1.0.pre69)
@@ -43,7 +43,7 @@ GIT
 
 GIT
   remote: git://github.com/next-l/enju_leaf.git
-  revision: 574817fe1eefd5c4b455dfebc119deea72c1cd09
+  revision: 1d658a4feb6381da40654450960d6a5ca84242e3
   branch: 1.1
   specs:
     enju_leaf (1.1.0.rc21)
@@ -173,7 +173,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (6.0.2)
-    cancancan (1.13.0)
+    cancancan (1.13.1)
     chronic (0.10.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -234,7 +234,7 @@ GEM
     geocoder (1.2.11)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    highline (1.7.7)
+    highline (1.7.8)
     i18n (0.7.0)
     jbuilder (2.3.2)
       activesupport (>= 3.0.0, < 5)
@@ -376,7 +376,7 @@ GEM
     rsolr (1.0.12)
       builder (>= 2.1.2)
     rufus-scheduler (3.1.6)
-    sass (3.4.18)
+    sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
