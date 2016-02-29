@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/eLocal/mobylette.git
+  revision: d6c8b8db7a97db975ba6870916485a7a55ffbdf9
+  specs:
+    mobylette (3.5)
+      actionpack (>= 3.0)
+
+GIT
   remote: git://github.com/masao/enju_grid.git
   revision: 98c853bfe4a4a04dc01b7e97d41ee49794a4b8c6
   branch: 1.1
@@ -268,8 +275,6 @@ GEM
     mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
-    mobylette (3.5)
-      actionpack (>= 3.0)
     mono_logger (1.1.0)
     multi_json (1.11.2)
     multipart-post (2.0.0)
@@ -466,6 +471,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   memcachier
+  mobylette!
   newrelic_rpm
   non-stupid-digest-assets
   pg

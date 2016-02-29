@@ -71,3 +71,4 @@ gem 'dotenv-rails'
 
 gem 'newrelic_rpm'
 
+gem 'mobylette', github: "eLocal/mobylette"
