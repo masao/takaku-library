@@ -98,7 +98,12 @@ namespace :minamisanriku do
     }
     io = open(ENV["file"]) if ENV["file"]
     io ||= STDIN
-    found_items = Set[ *io.map{|l| l.split.first } ]
+    ids = []
+    io.each do |line|
+      next if line.strip.empty?
+      ids << line.split.first
+    end
+    found_items = Set[ *ids ]
     items = Set[ *Item.where(shelf_id: @shelf.id) ]
     missing_items = ( items - found_items ).to_a
     @error[:missing] = missing_items.select do |item|
