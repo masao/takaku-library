@@ -86,4 +86,43 @@ namespace :minamisanriku do
       end
     end
   end
+
+  def check_items
+    if ENV["shelf"] and not ENV["shelf"].blank?
+      @shelf = Shelf.where(name: ENV["shelf"]).first
+    end
+    @error = {
+      missing: [],
+      error: [],
+      other_shelf: [],
+    }
+    io = open(ENV["file"]) if ENV["file"]
+    io ||= STDIN
+    found_items = Set[ *io.map{|l| l.split.first } ]
+    items = Set[ *Item.where(shelf_id: @shelf.id) ]
+    missing_items = ( items - found_items ).to_a
+    @error[:missing] = missing_items.select do |item|
+      true
+      # Checkout.where(item_id: item.id)
+    end
+    ( found_items - items ).each do |item|
+      if Item.where(id: item).first.nil?
+        @error[:error] << item
+      else
+        @error[:other_shelf] << item
+      end
+    end
+    [ :missing, :other_shelf ].each do |type|
+      @error[type].each do |item|
+        puts [ type, item.item_identifier, item.shelf.name, item.url ].join("\t")
+      end
+    end
+    @error[:error].each do |item|
+      puts [ :error, item, @shelf.name ].join("\t")
+    end
+  end
+  desc "check items"
+  task :check_items => :environment do
+    check_items
+  end
 end
