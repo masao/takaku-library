@@ -123,7 +123,7 @@ namespace :minamisanriku do
     [ :missing, :other_shelf ].each do |type|
       @error[type].each do |item_id|
         item = Item.where(item_identifier: item_id).first
-        puts [ type, item_id, item.shelf.name, "/items/#{items.id}" ].join("\t")
+        puts [ type, item_id, item.shelf.name, "/items/#{item.id}" ].join("\t")
       end
     end
     @error[:error].each do |item|
