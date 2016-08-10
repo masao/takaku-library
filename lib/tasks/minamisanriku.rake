@@ -104,14 +104,17 @@ namespace :minamisanriku do
       ids << line.split.first
     end
     found_items = Set[ *ids ]
-    items = Set[ *Item.where(shelf_id: @shelf.id) ]
+    all_items = Item.where(shelf_id: @shelf.id)
+    items = all_items.map do |item|
+      item.item_identifier
+    end
     missing_items = ( items - found_items ).to_a
     @error[:missing] = missing_items.select do |item|
       true
       # Checkout.where(item_id: item.id)
     end
     ( found_items - items ).each do |item|
-      if Item.where(id: item).first.nil?
+      if Item.where(item_identifier: item).first.nil?
         @error[:error] << item
       else
         @error[:other_shelf] << item
