@@ -121,8 +121,9 @@ namespace :minamisanriku do
       end
     end
     [ :missing, :other_shelf ].each do |type|
-      @error[type].each do |item|
-        puts [ type, item.item_identifier, item.shelf.name, item.url ].join("\t")
+      @error[type].each do |item_id|
+        item = Item.where(item_identifier: item_id).first
+        puts [ type, item_id, item.shelf.name, "/items/#{items.id}" ].join("\t")
       end
     end
     @error[:error].each do |item|
