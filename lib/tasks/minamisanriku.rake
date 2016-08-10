@@ -104,10 +104,10 @@ namespace :minamisanriku do
       ids << line.split.first
     end
     found_items = Set[ *ids ]
-    all_items = Item.where(shelf_id: @shelf.id)
-    items = all_items.map do |item|
+    all_items = Item.where(shelf_id: @shelf.id).map do |item|
       item.item_identifier
     end
+    items = Set[ *all_items ]
     missing_items = ( items - found_items ).to_a
     @error[:missing] = missing_items.select do |item|
       true
