@@ -1,4 +1,4 @@
-class Agent
+Agent.class_eval do
   def self.import_agents(agent_lists)
     STDERR.puts "new import_agents"
     agents = []
