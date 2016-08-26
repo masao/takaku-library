@@ -1,5 +1,6 @@
 class Agent
   def self.import_agents(agent_lists)
+    STDERR.puts "new import_agents"
     agents = []
     agent_lists.each do |agent_list|
       name_and_role = agent_list[:full_name].split('||')
