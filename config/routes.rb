@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users, path: 'accounts'
 
+  get "sitemap", to: redirect("https://s3.amazonaws.com/takaku-library/sitemaps/sitemap.xml.gz")
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
