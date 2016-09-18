@@ -3,4 +3,4 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-agent: *
 # Disallow: /
-Sitemap: https://s3.amazonaws.com/takaku-library/sitemaps/sitemap.xml.gz
+Sitemap: https://takaku-lib.herokuapp.com/sitemap
