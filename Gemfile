@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'unicorn'
 
 gem "memcachier"
+gem "dalli"
 gem "rails_12factor"
 
 # Use Capistrano for deployment
@@ -63,6 +64,9 @@ gem 'enju_manifestation_viewer', '~> 0.2.0'
 gem 'enju_circulation', '~> 0.2.0'
 gem 'enju_subject', '~> 0.2.0'
 gem 'enju_ndl', '~> 0.2.0'
+gem 'enju_grid'
+gem 'enju_loc'
+gem 'enju_nii'
 gem 'statesman', '~> 1.3'
 gem 'globalize', '~> 5.0.1'
 gem 'globalize-accessors'
@@ -75,7 +79,7 @@ gem 'exception_notification', '~> 4.0'
 #gem 'exception_notification-rake'
 gem 'whenever', require: false
 gem 'foreman'
-gem 'sunspot_solr', '~> 2.2.5'
+gem 'sunspot_solr', '~> 2.2.7'
 gem 'progress_bar'
 gem 'non-stupid-digest-assets'
 gem 'dotenv-rails'
