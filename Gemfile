@@ -74,7 +74,7 @@ gem 'redis-rails'
 gem 'resque', require: 'resque/server'
 
 #gem 'charlock_holmes', platforms: :mri
-gem "paperclip"
+gem "paperclip", "4.3.6"
 gem 'aws-sdk', '< 2.0'
 gem 'exception_notification', '~> 4.0'
 #gem 'exception_notification-rake'
