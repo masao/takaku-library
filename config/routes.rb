@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users, path: 'accounts'
 
+  authenticate :user, lambda {|u| u.role.try(:name) == 'Administrator' } do
+      mount Resque::Server.new, at: "/resque", as: :resque
+  end
+
+
   get "sitemap", to: redirect("https://s3.amazonaws.com/takaku-library/sitemaps/sitemap.xml.gz")
 
   # The priority is based upon order of creation: first created -> highest priority.

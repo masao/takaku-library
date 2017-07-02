@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.4.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2'
@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '~> 2.5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -47,29 +47,40 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.1"
-gem "enju_biblio", github: "next-l/enju_biblio", branch: "1.1"
-gem 'enju_flower', github: "next-l/enju_flower", branch: "1.1"
-gem "enju_grid", github: "masao/enju_grid", branch: "1.1"
-gem 'enju_manifestation_viewer', github: "next-l/enju_manifestation_viewer", branch: "1.1"
-gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
-gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
-gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
-gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
-gem 'enju_nii', github: "next-l/enju_nii", branch: "1.1"
-#gem 'enju_nii'
+#gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.1"
+#gem "enju_biblio", github: "next-l/enju_biblio", branch: "1.1"
+#gem 'enju_flower', github: "next-l/enju_flower", branch: "1.1"
+#gem "enju_grid", github: "masao/enju_grid", branch: "1.1"
+#gem 'enju_manifestation_viewer', github: "next-l/enju_manifestation_viewer", branch: "1.1"
+#gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
+#gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
+#gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
+#gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
+#gem 'enju_nii', github: "next-l/enju_nii", branch: "1.1"
+# #gem 'enju_nii'
+gem 'enju_leaf', '~> 1.2.0'
+gem 'enju_manifestation_viewer', '~> 0.2.0'
+gem 'enju_circulation', '~> 0.2.0'
+gem 'enju_subject', '~> 0.2.0'
+gem 'enju_ndl', '~> 0.2.0'
+gem 'statesman', '~> 1.3'
+gem 'globalize', '~> 5.0.1'
+gem 'globalize-accessors'
+gem 'redis-rails'
+gem 'resque', require: 'resque/server'
+
 #gem 'charlock_holmes', platforms: :mri
 gem 'aws-sdk', '< 2.0'
 gem 'exception_notification', '~> 4.0'
-gem 'exception_notification-rake'
+#gem 'exception_notification-rake'
 gem 'whenever', require: false
 gem 'foreman'
-gem 'sunspot_solr', '~> 2.1.1'
+gem 'sunspot_solr', '~> 2.2.5'
 gem 'progress_bar'
 gem 'non-stupid-digest-assets'
 gem 'dotenv-rails'
 
 gem 'newrelic_rpm'
 
-gem 'mobylette', github: "eLocal/mobylette"
+#gem 'mobylette', github: "eLocal/mobylette"
 gem 'fog-aws'

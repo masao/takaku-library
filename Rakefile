@@ -5,5 +5,5 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 require 'resque/tasks'
-require 'resque/scheduler/tasks'
+# require 'resque/scheduler/tasks'
 task 'resque:setup' => :environment
