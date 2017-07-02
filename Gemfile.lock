@@ -401,6 +401,7 @@ DEPENDENCIES
   memcachier
   newrelic_rpm
   non-stupid-digest-assets
+  paperclip
   pg
   progress_bar
   rails (~> 4.2)
