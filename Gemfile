@@ -64,7 +64,7 @@ gem 'enju_manifestation_viewer', '~> 0.2.0'
 gem 'enju_circulation', '~> 0.2.0'
 gem 'enju_subject', '~> 0.2.0'
 gem 'enju_ndl', '~> 0.2.0'
-gem 'enju_grid'
+gem 'enju_grid', ">= 0.2.0.beta3"
 gem 'enju_loc'
 gem 'enju_nii'
 gem 'statesman', '~> 1.3'
@@ -74,7 +74,7 @@ gem 'redis-rails'
 gem 'resque', require: 'resque/server'
 
 #gem 'charlock_holmes', platforms: :mri
-gem "paperclip", "4.3.6"
+gem "paperclip", "4.3.7"
 gem 'aws-sdk', '< 2.0'
 gem 'exception_notification', '~> 4.0'
 #gem 'exception_notification-rake'

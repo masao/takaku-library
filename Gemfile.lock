@@ -35,7 +35,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    acts_as_list (0.9.5)
+    acts_as_list (0.9.7)
       activerecord (>= 3.0)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
@@ -93,7 +93,8 @@ GEM
     enju_event (0.2.1)
       enju_message (~> 0.2.1)
       ri_cal
-    enju_grid (0.1.1)
+    enju_grid (0.2.0.beta.3)
+      enju_biblio (~> 0.2.0.beta.3)
     enju_leaf (1.2.1)
       enju_biblio (~> 0.2.1)
       jquery-ui-rails (~> 4.2.1)
@@ -174,7 +175,7 @@ GEM
     globalize-accessors (0.2.1)
       globalize (~> 5.0, >= 5.0.0)
     highline (1.7.8)
-    i18n (0.8.4)
+    i18n (0.8.6)
     ipaddress (0.8.3)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -220,10 +221,10 @@ GEM
     nori (2.6.0)
     options (2.3.2)
     orm_adapter (0.5.0)
-    paper_trail (7.0.3)
+    paper_trail (7.1.0)
       activerecord (>= 4.0, < 5.2)
       request_store (~> 1.1)
-    paperclip (4.3.6)
+    paperclip (4.3.7)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       cocaine (~> 0.5.5)
@@ -280,7 +281,7 @@ GEM
       actionpack (>= 4.0, < 6)
       redis-rack (>= 1, < 3)
       redis-store (>= 1.1.0, < 1.4.0)
-    redis-activesupport (5.0.2)
+    redis-activesupport (5.0.3)
       activesupport (>= 3, < 6)
       redis-store (~> 1.3.0)
     redis-namespace (1.5.3)
@@ -307,7 +308,7 @@ GEM
     ri_cal (0.8.8)
     rsolr (1.1.2)
       builder (>= 2.1.2)
-    sass (3.4.24)
+    sass (3.4.25)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
@@ -384,7 +385,7 @@ DEPENDENCIES
   dalli
   dotenv-rails
   enju_circulation (~> 0.2.0)
-  enju_grid
+  enju_grid (>= 0.2.0.beta3)
   enju_leaf (~> 1.2.0)
   enju_loc
   enju_manifestation_viewer (~> 0.2.0)
@@ -401,7 +402,7 @@ DEPENDENCIES
   memcachier
   newrelic_rpm
   non-stupid-digest-assets
-  paperclip (= 4.3.6)
+  paperclip (= 4.3.7)
   pg
   progress_bar
   rails (~> 4.2)
