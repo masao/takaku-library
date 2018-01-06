@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.4.2'
+ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2'
@@ -74,7 +74,7 @@ gem 'redis-rails'
 gem 'resque', require: 'resque/server'
 
 #gem 'charlock_holmes', platforms: :mri
-gem "paperclip", "4.3.7"
+#gem "paperclip", "4.3.7"
 gem 'aws-sdk', '< 2.0'
 gem 'exception_notification', '~> 4.0'
 #gem 'exception_notification-rake'
