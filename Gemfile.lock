@@ -245,7 +245,7 @@ GEM
       mimemagic (= 0.3.0)
     paperclip-meta (2.0.2)
       paperclip (~> 4.0)
-    pg (1.0.0)
+    pg (0.21.0)
     pr_geohash (1.0.0)
     progress_bar (1.1.0)
       highline (~> 1.6)
@@ -424,7 +424,7 @@ DEPENDENCIES
   memcachier
   newrelic_rpm
   non-stupid-digest-assets
-  pg
+  pg (~> 0.21)
   progress_bar
   rails (~> 4.2)
   rails_12factor
