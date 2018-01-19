@@ -48,17 +48,7 @@ group :development, :test do
   gem 'spring'
 end
 
-#gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.1"
-#gem "enju_biblio", github: "next-l/enju_biblio", branch: "1.1"
-#gem 'enju_flower', github: "next-l/enju_flower", branch: "1.1"
-#gem "enju_grid", github: "masao/enju_grid", branch: "1.1"
-#gem 'enju_manifestation_viewer', github: "next-l/enju_manifestation_viewer", branch: "1.1"
-#gem 'enju_ndl', github: "next-l/enju_ndl", branch: "1.1"
-#gem 'enju_circulation', github: "next-l/enju_circulation", branch: "1.1"
-#gem 'enju_subject', github: "next-l/enju_subject", branch: "1.1"
-#gem 'enju_loc', github: "next-l/enju_loc", branch: "1.1"
-#gem 'enju_nii', github: "next-l/enju_nii", branch: "1.1"
-# #gem 'enju_nii'
+#gem 'enju_leaf', github: "next-l/enju_leaf", branch: "1.2"
 gem 'enju_leaf', '~> 1.2.0'
 gem 'enju_manifestation_viewer', '~> 0.2.0'
 gem 'enju_circulation', '~> 0.2.0'
@@ -68,7 +58,7 @@ gem 'enju_grid', ">= 0.2.0.beta3"
 gem 'enju_loc'
 gem 'enju_nii'
 gem 'statesman', '~> 1.3'
-gem 'globalize', '~> 5.0.1'
+#gem 'globalize', '~> 5.0.1'
 gem 'globalize-accessors'
 gem 'redis-rails'
 gem 'resque', require: 'resque/server'
