@@ -57,9 +57,9 @@ gem 'enju_ndl', '~> 0.2.0'
 gem 'enju_grid', ">= 0.2.0.beta3"
 gem 'enju_loc'
 gem 'enju_nii'
-gem 'statesman', '~> 1.3'
+#gem 'statesman', '~> 1.3'
 #gem 'globalize', '~> 5.0.1'
-gem 'globalize-accessors'
+#gem 'globalize-accessors'
 gem 'redis-rails'
 gem 'resque', require: 'resque/server'
 
