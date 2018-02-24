@@ -2,14 +2,13 @@ Rails.application.routes.draw do
   devise_for :users, path: 'accounts'
 
   authenticate :user, lambda {|u| u.role.try(:name) == 'Administrator' } do
-      mount Resque::Server.new, at: "/resque", as: :resque
+    mount Resque::Server.new, at: "/resque", as: :resque
   end
 
- # as :user do
-  #  get 'users/edit' => 'devise/registrations#edit', as: 'edit_user_registration'
-  #  put 'users' => 'devise/registrations#update', as: 'user_registration'
-  #end
-  #devise_for :users, skip: [:registration]
+  as :user do
+    get 'users/edit' => 'devise/registrations#edit', as: 'edit_user_registration'
+    put 'users' => 'devise/registrations#update', as: 'user_registration'
+  end
 
   get "sitemap", to: redirect("https://s3.amazonaws.com/takaku-library/sitemaps/sitemap.xml.gz")
 
