@@ -5,11 +5,6 @@ Rails.application.routes.draw do
     mount Resque::Server.new, at: "/resque", as: :resque
   end
 
-  as :user do
-    get 'users/edit' => 'devise/registrations#edit', as: 'edit_user_registration'
-    put 'users' => 'devise/registrations#update', as: 'user_registration'
-  end
-
   get "sitemap", to: redirect("https://s3.amazonaws.com/takaku-library/sitemaps/sitemap.xml.gz")
 
   # The priority is based upon order of creation: first created -> highest priority.
