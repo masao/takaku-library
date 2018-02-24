@@ -15,3 +15,6 @@
  *= require enju_leaf
  *= require enju_event/application
  */
+div#library_system_name{
+  width: 640px;
+}
