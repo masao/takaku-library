@@ -11,9 +11,9 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
  *= require enju_leaf
  *= require enju_event/application
+ *= require_self
  */
 div#library_system_name{
   width: 640px;
