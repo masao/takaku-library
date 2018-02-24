@@ -3,8 +3,8 @@ class AddConstraintsToMostRecentForMessageTransitions < ActiveRecord::Migration
   disable_ddl_transaction!
 
   def up
-    add_index :message_transitions, [:message_id, :most_recent], unique: true, where: "most_recent", name: "index_message_transitions_parent_most_recent" #, algorithm: :concurrently
-    change_column_null :message_transitions, :most_recent, false
+    #add_index :message_transitions, [:message_id, :most_recent], unique: true, where: "most_recent", name: "index_message_transitions_parent_most_recent" #, algorithm: :concurrently
+    #change_column_null :message_transitions, :most_recent, false
   end
 
   def down
